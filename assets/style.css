@@ -1,7 +1,9 @@
+/* style.css — Oracle Mode: Baja Thread */
+
 body {
   font-family: Georgia, serif;
-  background-color: #fff;
-  color: #222;
+  background-color: #0b0f12; /* near black */
+  color: #c6f7f7; /* pale aqua text */
   margin: 2rem;
   line-height: 1.7;
 }
@@ -13,21 +15,59 @@ header {
 
 h1 {
   font-size: 2.5rem;
+  color: #7af0db; /* bright turquoise */
   margin-bottom: 0.2rem;
 }
 
 .tagline {
   font-style: italic;
-  color: #555;
+  color: #79d9d9; /* soft cyan */
   margin-bottom: 1rem;
 }
 
 nav a {
   margin: 0 0.75rem;
   text-decoration: none;
-  color: #3366cc;
+  color: #44d9e6; /* Baja blast turquoise */
+  font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #89ffff; /* glow on hover */
+}
+
+a {
+  color: #63f2f2;
+}
+
+a:hover {
+  color: #aefdfd;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li::marker {
+  color: #7de4ff; /* bright cyan bullets */
+}
+
+strong {
+  color: #89ffff;
+}
+
+code {
+  background-color: #111;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #00f7ff;
+  font-family: Consolas, monospace;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: center;
 }
