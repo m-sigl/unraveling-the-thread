@@ -1,73 +1,133 @@
-/* style.css — Oracle Mode: Baja Thread */
+/* Shared Thread + SpokenAndBare Theme */
 
+/* ========== Base ========== */
 body {
-  font-family: Georgia, serif;
-  background-color: #0b0f12; /* near black */
-  color: #c6f7f7; /* pale aqua text */
-  margin: 2rem;
+  background-color: #0b0b0b;
+  color: #fcefdc;
+  font-family: 'Georgia', serif;
   line-height: 1.7;
+  padding: 2rem;
+  max-width: 750px;
+  margin: auto;
 }
 
+/* ========== Typography ========== */
+h1, h2, h3, h4, h5, h6 {
+  color: #fce3b8;
+  font-weight: normal;
+  margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  color: #fcefdc;
+}
+
+em {
+  color: #ffdfba;
+}
+
+/* ========== Links & Buttons ========== */
+a, .button, .enter-btn {
+  background-color: #e89a45;
+  color: #0b0b0b;
+  border: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover, .button:hover, .enter-btn:hover {
+  background-color: #f8b35a;
+  color: #000;
+}
+
+/* Optional alternate link style */
+.button-link {
+  display: inline-block;
+  margin: 8px auto 0;
+  padding: 8px 14px;
+  background-color: #e89a45;
+  color: #0b0b0b;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #f8b35a;
+  color: #000;
+}
+
+/* ========== Rant Cards ========== */
+.rant-card {
+  background-color: #141414;
+  border: 1px solid #222;
+  box-shadow: 0 0 10px rgba(232, 154, 69, 0.15);
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.rant-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(232, 154, 69, 0.3);
+}
+
+.rant-card .subtitle {
+  font-size: 0.95rem;
+  color: #d5c8b3;
+  margin-top: 8px;
+}
+
+/* ========== Quote Styling ========== */
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #ffb347;
+  font-style: italic;
+  color: #fcd5b4;
+}
+
+/* ========== Callout for burned lines ========== */
+.burned {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffa07a;
+  margin-top: 3rem;
+}
+
+/* ========== Header Section (Optional use) ========== */
 header {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 80px 20px 40px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(15, 15, 15, 0.95));
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #7af0db; /* bright turquoise */
-  margin-bottom: 0.2rem;
+header h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  letter-spacing: 2px;
 }
 
-.tagline {
-  font-style: italic;
-  color: #79d9d9; /* soft cyan */
-  margin-bottom: 1rem;
+header p {
+  font-size: 1.2rem;
+  color: #d9c6aa;
+  margin-top: 10px;
 }
 
-nav a {
-  margin: 0 0.75rem;
-  text-decoration: none;
-  color: #44d9e6; /* Baja blast turquoise */
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #89ffff; /* glow on hover */
-}
-
-a {
-  color: #63f2f2;
-}
-
-a:hover {
-  color: #aefdfd;
-}
-
-ul {
-  list-style-type: square;
-}
-
-ul li::marker {
-  color: #7de4ff; /* bright cyan bullets */
-}
-
-strong {
-  color: #89ffff;
-}
-
-code {
-  background-color: #111;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  color: #00f7ff;
-  font-family: Consolas, monospace;
-}
-
+/* ========== Footer ========== */
 footer {
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #999;
   text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: #888;
 }
